@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16922C55-E4AA-4D9D-BA90-39E894225D21}|src\\Journey.API\\Journey.API.csproj|c:\\users\\anali\\desktop\\csharp\\journey\\src\\journey.api\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16922C55-E4AA-4D9D-BA90-39E894225D21}|src\\Journey.API\\Journey.API.csproj|solutionrelative:src\\journey.api\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7515522F-E0CE-4F65-92D1-2F79AF00C482}|src\\Journey.Application\\Journey.Application.csproj|c:\\users\\anali\\desktop\\csharp\\journey\\src\\journey.application\\usecases\\trips\\register\\registertripusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7515522F-E0CE-4F65-92D1-2F79AF00C482}|src\\Journey.Application\\Journey.Application.csproj|solutionrelative:src\\journey.application\\usecases\\trips\\register\\registertripusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7515522F-E0CE-4F65-92D1-2F79AF00C482}|src\\Journey.Application\\Journey.Application.csproj|c:\\users\\anali\\desktop\\csharp\\journey\\src\\journey.application\\usecases\\trips\\getall\\getalltripsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7515522F-E0CE-4F65-92D1-2F79AF00C482}|src\\Journey.Application\\Journey.Application.csproj|solutionrelative:src\\journey.application\\usecases\\trips\\getall\\getalltripsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4AA56E3-F64D-45AA-9476-C37DF7BA6653}|src\\Journey.Communication\\Journey.Communication.csproj|c:\\users\\anali\\desktop\\csharp\\journey\\src\\journey.communication\\responses\\responsetripsjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4AA56E3-F64D-45AA-9476-C37DF7BA6653}|src\\Journey.Communication\\Journey.Communication.csproj|solutionrelative:src\\journey.communication\\responses\\responsetripsjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResponseTripsJson.cs",
+              "DocumentMoniker": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Communication\\Responses\\ResponseTripsJson.cs",
+              "RelativeDocumentMoniker": "src\\Journey.Communication\\Responses\\ResponseTripsJson.cs",
+              "ToolTip": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Communication\\Responses\\ResponseTripsJson.cs",
+              "RelativeToolTip": "src\\Journey.Communication\\Responses\\ResponseTripsJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:43:48.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterTripUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Application\\UseCases\\Trips\\Register\\RegisterTripUseCase.cs",
+              "RelativeDocumentMoniker": "src\\Journey.Application\\UseCases\\Trips\\Register\\RegisterTripUseCase.cs",
+              "ToolTip": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Application\\UseCases\\Trips\\Register\\RegisterTripUseCase.cs",
+              "RelativeToolTip": "src\\Journey.Application\\UseCases\\Trips\\Register\\RegisterTripUseCase.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:41:44.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllTripsUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Application\\UseCases\\Trips\\GetAll\\GetAllTripsUseCase.cs",
+              "RelativeDocumentMoniker": "src\\Journey.Application\\UseCases\\Trips\\GetAll\\GetAllTripsUseCase.cs",
+              "ToolTip": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.Application\\UseCases\\Trips\\GetAll\\GetAllTripsUseCase.cs",
+              "RelativeToolTip": "src\\Journey.Application\\UseCases\\Trips\\GetAll\\GetAllTripsUseCase.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:41:39.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TripsController.cs",
+              "DocumentMoniker": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.API\\Controllers\\TripsController.cs",
+              "RelativeDocumentMoniker": "src\\Journey.API\\Controllers\\TripsController.cs",
+              "ToolTip": "C:\\Users\\anali\\Desktop\\csharp\\Journey\\src\\Journey.API\\Controllers\\TripsController.cs",
+              "RelativeToolTip": "src\\Journey.API\\Controllers\\TripsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:40:05.745Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

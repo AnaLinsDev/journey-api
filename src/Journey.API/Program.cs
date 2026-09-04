@@ -15,4 +15,15 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+app.Lifetime.ApplicationStarted.Register(() =>
+{
+    foreach (var url in app.Urls)
+    {
+        Console.WriteLine("==========SWAGGER=========");
+        Console.WriteLine($"Swagger UI: {url}/swagger");
+        Console.WriteLine("==========================");
+    }
+});
+
 app.Run();

@@ -8,6 +8,13 @@ public class JourneyDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=journey.db");
+        optionsBuilder.UseSqlite("Data Source=YOUR_DB_PATH\\journey.db");
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Activity>().ToTable("Activities");
     }
 }

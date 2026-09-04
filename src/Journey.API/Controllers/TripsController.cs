@@ -1,4 +1,5 @@
 ﻿using Journey.Application.UseCases.Trips.GetAll;
+using Journey.Application.UseCases.Trips.GetById;
 using Journey.Application.UseCases.Trips.Register;
 using Journey.Communication.Requests;
 using Journey.Exception.ExceptionsBase;
@@ -35,5 +36,26 @@ public class TripsController : ControllerBase
         var useCase = new GetAllTripsUseCase();
         var response = useCase.Execute();
         return Ok(response);
+    }
+
+    [HttpGet]
+    [Route("{id}")]
+    public IActionResult GetById([FromRoute] Guid id)
+    {
+        // a2bafe4f-3bac-4f16-85fc-90518d26fe89
+        try
+        {
+            var useCase = new GetTripByIdUseCase();
+            var response = useCase.Execute(id);
+            return Ok(response);
+        }
+        catch (JourneyException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Unknown Error");
+        }
     }
 }

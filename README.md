@@ -56,7 +56,7 @@ Through this project, I practiced:
 - Exception handling
 - Debugging with Visual Studio
 
-## How to Run
+## How to Run (Without Docker)
 
 ### Prerequisites
 
@@ -77,19 +77,29 @@ git clone https://github.com/AnaLinsDev/journey-api.git
 cd journey-api
 ```
 
-### 3. Restore dependencies
+### 3. Add your DB_PATH
+
+Go to \src\Journey.Infrastructure and change the file JourneyDbContext
+
+Update the following code line with the path that you want to create your db file
+
+```bash
+optionsBuilder.UseSqlite("Data Source=YOUR_DB_PATH\\journey.db");
+```
+
+### 4. Restore dependencies
 
 ```bash
 dotnet restore
 ```
 
-### 4. Build the project
+### 5. Build the project
 
 ```bash
 dotnet build
 ```
 
-### 5. Run the API
+### 6. Run the API
 
 ```bash
 dotnet run --project src/Journey.API
@@ -97,7 +107,7 @@ dotnet run --project src/Journey.API
 
 The terminal will display the URL where the API is running.
 
-### 6. Open Swagger
+### 7. Open Swagger
 
 Open the Swagger URL displayed by the application in your browser.
 

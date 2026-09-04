@@ -3,6 +3,7 @@ using System;
 using Journey.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Journey.Infrastructure.Migrations
 {
     [DbContext(typeof(JourneyDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260904194338_AddActivitiesTable")]
+    partial class AddActivitiesTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.19");
@@ -38,8 +41,6 @@ namespace Journey.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TripId");
-
                     b.ToTable("Activities");
                 });
 
@@ -62,20 +63,6 @@ namespace Journey.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Trips");
-                });
-
-            modelBuilder.Entity("Journey.Infrastructure.Entities.Activity", b =>
-                {
-                    b.HasOne("Journey.Infrastructure.Entities.Trip", null)
-                        .WithMany("Activities")
-                        .HasForeignKey("TripId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Journey.Infrastructure.Entities.Trip", b =>
-                {
-                    b.Navigation("Activities");
                 });
 #pragma warning restore 612, 618
         }

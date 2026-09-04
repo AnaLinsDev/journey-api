@@ -38,15 +38,15 @@ public class RegisterTripUseCase
     private void Validate(RequestRegisterTripJson request)
     {
         if (string.IsNullOrWhiteSpace(request.Name)) {
-            throw new JourneyException(ResourceErrorMessages.NAME_EMPTY);
+            throw new ErrorOnValidationException(ResourceErrorMessages.NAME_EMPTY);
         }
         if (request.StartDate < DateTime.UtcNow)
         {
-            throw new JourneyException(ResourceErrorMessages.DATE_TRIP_MUST_BE_LATER_THAN_TODAY);
+            throw new ErrorOnValidationException(ResourceErrorMessages.DATE_TRIP_MUST_BE_LATER_THAN_TODAY);
         }
         if (request.EndDate < request.StartDate)
         {
-            throw new JourneyException(ResourceErrorMessages.END_DATE_TRIP_MUST_BE_LATER_THAN_START_DATE);
+            throw new ErrorOnValidationException(ResourceErrorMessages.END_DATE_TRIP_MUST_BE_LATER_THAN_START_DATE);
         }
     }
 }

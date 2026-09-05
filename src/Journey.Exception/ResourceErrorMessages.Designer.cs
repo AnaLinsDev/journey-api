@@ -97,11 +97,65 @@ namespace Journey.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Invalid order field.
+        /// </summary>
+        public static string INVALID_ORDER_FIELD {
+            get {
+                return ResourceManager.GetString("INVALID_ORDER_FIELD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Invalid sortBy field.
+        /// </summary>
+        public static string INVALID_SORT_FIELD {
+            get {
+                return ResourceManager.GetString("INVALID_SORT_FIELD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Trip name is required..
         /// </summary>
         public static string NAME_EMPTY {
             get {
                 return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Page seze greater than maximum allowed.
+        /// </summary>
+        public static string PAGE_GREATER_THAN_MAX_ALLOWED {
+            get {
+                return ResourceManager.GetString("PAGE_GREATER_THAN_MAX_ALLOWED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Page number greater than the toal of pages..
+        /// </summary>
+        public static string PAGE_GREATER_THAN_TOTAL_PAGES {
+            get {
+                return ResourceManager.GetString("PAGE_GREATER_THAN_TOTAL_PAGES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Page number must be greater than zero..
+        /// </summary>
+        public static string PAGE_MUST_BE_GREATER_THAN_ZERO {
+            get {
+                return ResourceManager.GetString("PAGE_MUST_BE_GREATER_THAN_ZERO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Page size must be greater than zero..
+        /// </summary>
+        public static string PAGE_SIZE_MUST_BE_GREATER_THAN_ZERO {
+            get {
+                return ResourceManager.GetString("PAGE_SIZE_MUST_BE_GREATER_THAN_ZERO", resourceCulture);
             }
         }
         

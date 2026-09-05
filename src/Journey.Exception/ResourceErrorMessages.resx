@@ -129,8 +129,26 @@
   <data name="END_DATE_TRIP_MUST_BE_LATER_THAN_START_DATE" xml:space="preserve">
     <value>Trip end date must be after the start date.</value>
   </data>
+  <data name="INVALID_ORDER_FIELD" xml:space="preserve">
+    <value>Invalid order field</value>
+  </data>
+  <data name="INVALID_SORT_FIELD" xml:space="preserve">
+    <value>Invalid sortBy field</value>
+  </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Trip name is required.</value>
+  </data>
+  <data name="PAGE_GREATER_THAN_MAX_ALLOWED" xml:space="preserve">
+    <value>Page seze greater than maximum allowed</value>
+  </data>
+  <data name="PAGE_GREATER_THAN_TOTAL_PAGES" xml:space="preserve">
+    <value>Page number greater than the toal of pages.</value>
+  </data>
+  <data name="PAGE_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Page number must be greater than zero.</value>
+  </data>
+  <data name="PAGE_SIZE_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
+    <value>Page size must be greater than zero.</value>
   </data>
   <data name="TRIP_NOT_FOUND" xml:space="preserve">
     <value>Trip not found.</value>

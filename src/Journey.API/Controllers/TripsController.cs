@@ -27,10 +27,14 @@ public class TripsController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseTripsJson), StatusCodes.Status200OK)]
-    public IActionResult GetAll()
+    public IActionResult GetAll(
+    [FromQuery] int page,
+    [FromQuery] int pageSize,
+    [FromQuery] string sortBy,
+    [FromQuery] string order)
     {
         var useCase = new GetAllTripsUseCase();
-        var response = useCase.Execute();
+        var response = useCase.Execute(page, pageSize, sortBy, order);
 
         return Ok(response);
     }

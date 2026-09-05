@@ -5,6 +5,7 @@ using Journey.Application.UseCases.Trips.DeleteTrip;
 using Journey.Application.UseCases.Trips.GetAll;
 using Journey.Application.UseCases.Trips.GetById;
 using Journey.Application.UseCases.Trips.Register;
+using Journey.Application.UseCases.Trips.Update;
 using Journey.Communication.Requests;
 using Journey.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +28,7 @@ public class TripsController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(typeof(ResponseTripsJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
     public IActionResult GetAll(
     [FromQuery] int page,
     [FromQuery] int pageSize,
@@ -49,6 +51,20 @@ public class TripsController : ControllerBase
         var response = useCase.Execute(id);
 
         return Ok(response);
+    }
+
+    [HttpPut]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
+    public IActionResult Update(
+        [FromRoute] Guid id, 
+        [FromBody] RequestUpdateTripJson request)
+    {
+        var useCase = new UpdateTripUseCase();
+        useCase.Execute(id, request);
+
+        return NoContent();
     }
 
     [HttpDelete]

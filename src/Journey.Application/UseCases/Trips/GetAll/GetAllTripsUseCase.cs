@@ -49,10 +49,6 @@ public class GetAllTripsUseCase
 
     public void ValidateQueries(int page, int pageSize, int totalPages, string sortBy, string order)
     {
-        var allowedSortFields = new[]
-        {
-            "startdate"
-        };
 
         var allowedOrder = new[]
        {

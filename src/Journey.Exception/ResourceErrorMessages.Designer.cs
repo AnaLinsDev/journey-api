@@ -61,6 +61,15 @@ namespace Journey.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Activity not found..
+        /// </summary>
+        public static string ACTIVITY_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("ACTIVITY_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The date you selected for the activity is not within your travel period.
         /// </summary>
         public static string DATE_NOT_WITHIN_TRAVEL_PERIOD {

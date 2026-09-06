@@ -19,6 +19,9 @@ This project was developed **primarily to understand the structure and implement
 - Create trip
 - Update a trip
 - Delete a trip
+- Create a activity for a trip
+- Complete an activity
+- Delete an activity
 - Business rule validation
 - Status and Priority validation
 - HTTP status code handling
@@ -42,6 +45,10 @@ For this project, the following layered architecture was adopted:
 | POST | `/api/trips` | Create a trip |
 | PUT | `/api/trips/{id}` | Update a trip |
 | DELETE | `/api/trips/{id}` | Delete a trip |
+| POST | `/api/trips/{tripId}/activity` | Create an activity for a trip |
+| DELETE | `/api/trips/{tripId}/activity/{activityId}` | Delete an activity |
+| PUT | `/api/trips/{tripId}/activity/{activityId}/complete` | Complete an activity |
+
 
 ## What I Practiced
 
@@ -52,9 +59,16 @@ Through this project, I practiced:
 - RESTful API design
 - HTTP methods and status codes
 - Business rule implementation
-- Input validation
 - Exception handling
 - Debugging with Visual Studio
+- API documentation with Swagger
+
+## Next Steps
+
+- Implement dependency injection
+- Implement unit tests
+- Add authentication
+- Add authorization for specific endpoints
 
 ## How to Run (Without Docker)
 
@@ -79,7 +93,7 @@ cd journey-api
 
 ### 3. Add your DB_PATH
 
-Go to \src\Journey.Infrastructure and change the file JourneyDbContext
+Go to \src\Journey.Infrastructure and change the file JourneyDbContext.cs
 
 Update the following code line with the path that you want to create your db file
 
@@ -99,7 +113,23 @@ dotnet restore
 dotnet build
 ```
 
-### 6. Run the API
+### 5. Creating database tables
+
+Go to the Infrastructure project
+```bash
+cd src\Journey.Infrastructure
+```
+Create the tables
+```bash
+dotnet ef database update 
+```
+Go back to the solution path
+```bash
+cd ../..
+```
+
+
+### 7. Run the API
 
 ```bash
 dotnet run --project src/Journey.API
